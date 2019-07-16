@@ -1,7 +1,7 @@
 {
-  "name": "unsplash",
+  "name": "flamez-image-listing",
   "version": "1.0.0",
-  "description": "Cowrywise Unsplash",
+  "description": "Image Listing",
   "author": "Oluwole Adebiyi - Flamez",
   "private": true,
   "scripts": {

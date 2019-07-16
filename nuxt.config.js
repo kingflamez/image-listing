@@ -8,7 +8,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: pkg.name,
+    title: 'Image Listing',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -45,7 +45,7 @@ export default {
    ** Axios module configuration
    */
   axios: {
-    baseURL: process.env.UNSPLASH_API
+    baseURL: process.env.API
   },
 
   styleResources: {
@@ -53,7 +53,7 @@ export default {
   },
 
   env: {
-    UNSPLASH_ACCESS_KEY: process.env.UNSPLASH_ACCESS_KEY
+    ACCESS_KEY: process.env.ACCESS_KEY
   },
 
   /*

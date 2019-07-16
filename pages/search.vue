@@ -2,7 +2,7 @@
   <div class="body">
     <section class="header">
       <div class="container">
-        <div class="header__title">
+        <h1 class="header__title">
           {{
             loading
               ? 'Searching'
@@ -14,7 +14,7 @@
           <span class="header__title__search"
             >"{{ search.charAt(0).toUpperCase() + search.slice(1) }}"</span
           >
-        </div>
+        </h1>
       </div>
     </section>
     <div class="container">
@@ -33,10 +33,10 @@
           />
           <div class="overlay" />
           <div class="info">
-            <div class="info__name">
+            <h3 class="info__name">
               {{ photo.user.first_name }} {{ photo.user.last_name }}
-            </div>
-            <div class="info__location">{{ photo.user.location }}</div>
+            </h3>
+            <p class="info__location">{{ photo.user.location }}</p>
           </div>
         </div>
       </div>
@@ -85,7 +85,7 @@ export default {
       `search/photos?query=${this.search}`,
       {
         headers: {
-          Authorization: `Client-ID ${process.env.UNSPLASH_ACCESS_KEY}`
+          Authorization: `Client-ID ${process.env.ACCESS_KEY}`
         }
       }
     )

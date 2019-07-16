@@ -1,6 +1,6 @@
-# unsplash
+# Image Listing
 
-> Cowrywise Unsplash
+> Image Listing using Nuxt
 
 ## Build Setup
 
